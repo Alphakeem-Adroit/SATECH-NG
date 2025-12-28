@@ -27,3 +27,30 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: var(--black);
+}
+
+.active {
+    color: var(--grey) !important;
+    font-weight: 600;
+
+}
+
+.cta {
+    background-color: var(--grey);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: var(--paragraph);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: var(--umbra);
+    transition: 0.3s ease;
+}
+
