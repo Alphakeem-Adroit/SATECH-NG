@@ -47,6 +47,11 @@ body {
     font-size: var(--paragraph);
     font-weight: 400;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .cta:hover {
@@ -54,3 +59,317 @@ body {
     transition: 0.3s ease;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/public/assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+header .desktop-nav .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+header .desktop-nav .branding h4 {
+    font-size: var(--heading4);
+    color: var(--white);
+}
+
+header .desktop-nav .desktop-nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+header .desktop-nav .desktop-nav-items ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-size: var(--paragraph);
+}
+
+header .desktop-nav .desktop-nav-items ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+header .desktop-nav .desktop-nav-items ul li a:hover {
+    color: var(--grey);
+    transition: 0.3s ease;
+}
+
+header .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1440px;
+    width: 40%;
+    gap: 50px;
+}
+
+header .hero .new {
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    font-size: var(--small);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero .new .new-button {
+    background-color: var(--grey);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+}
+
+header .hero .new small {
+    margin: 0 5px;
+    font-size: var(--small);
+}
+
+header .hero .hero-main {
+    text-align: center;
+    color: var(--white);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==== MAIN ==== */
+/* Services and Portfolio Section */
+.services,
+.portfolios {
+    padding: 100px 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: var(--black);
+    width: 100%;
+}
+
+.services .services-heading,
+.portfolios .portfolio-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.services .services-heading a,
+.portfolios .portfolio-heading a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: var(--small);
+}
+
+.services .services-heading a:hover,
+.portfolios .portfolio-heading a:hover {
+    color: var(--white);
+    transition: ease 0.3s;
+}
+
+.services .service-card-list,
+.portfolios .portfolio-card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    max-width: 1440px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.services .service-card-list::-webkit-scrollbar,
+.portfolios .portfolio-card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.services .service-card-list .service-card,
+.portfolios .portfolio-card-list .portfolio-card
+ {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    color: var(--white);
+}
+
+.services .service-card-list .service-card .service-img,
+.portfolios .portfolio-card-list .portfolio-card .portfolio-img {
+    height: 350px;
+    width: 300px;
+}
+
+.services .service-card-list .service-card .service-img img,
+.portfolios .portfolio-card-list .portfolio-card .portfolio-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.services .service-card-list .service-card .service,
+.portfolios .portfolio-card-list .portfolio-card .portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.services .service-card-list .service-card .service .service-icon,
+.portfolios .portfolio-card-list .portfolio-card .portfolio .portfolio-icon {
+    height: 50px;
+    width: 50px;
+    background-color: var(--umbra);
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.services .swipe,
+.portfolios .swipe {
+    display: flex;
+    flex-direction: row;
+    color: var(--grey);
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--black);
+    padding: 100px 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section .cta-content {
+    max-width: 1440px;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 8px;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.cta-section .cta-content h2 {
+    width: 40%
+}
+
+.cta-section .cta-content .cta {
+    background-color: var(--white);
+    color: var(--grey);
+}
+
+.cta-section .cta-content .cta:hover {
+    background-color: var(--umbra);
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Desktop */
+@media (min-width: 1281px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1025px) and (max-width: 1281px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Tablet (Landscape)
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        background-color: green;
+    }
+} */
+
+/* Tablet (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: orange;
+    }
+
+    header .desktop-nav {
+        display: none;
+    }
+
+    header .mobile-nav {
+        display: flex;
+    }
+}
+
+/* Mobile (Landscape)
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: pink;
+    }
+} */
+
+/* Mobile (Portrait) */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}

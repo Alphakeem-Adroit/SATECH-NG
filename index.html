@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="desktop-nav">
             <div class="branding">
                 <a href="index.html">
                     <img src="public/assets/images/satech_logo.svg" alt="Simple Adroit Technology Logo">
@@ -37,7 +37,7 @@
         </nav>
 
         <!-- Mobile Screen Navigation -->
-        <nav style="display: none;">
+        <nav class="mobile-nav">
             <div class="branding">
                 <a href="index.html">
                     <img src="public/assets/images/satech_logo.svg" alt="Simple Adroit Technology Logo">
@@ -46,11 +46,11 @@
                 <h4>SATECH LTD</h4>
             </div>
 
-            <div class="mobile-menu-icon">
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
                 <i class="bi bi-list"></i>
             </div>
 
-            <div class="mobile-nav-items">
+            <div class="mobile-nav-items" id="mobile-nav-items">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="">About Us</a></li>
@@ -67,7 +67,7 @@
 
         <div class="hero">
             <div class="new">
-                <button class="new-button">New</button>
+                <p class="new-button">New</p>
                 <small>Software & Digital Solutions Company</small>
             </div>
 
@@ -82,12 +82,17 @@
 
     <main>
         <section class="services" id="services">
-            <h2>Services</h2>
+            <div class="services-heading">
+                <h2>Services</h2>
+                <a href="#">View all</a>
+            </div>
 
             <div class="service-card-list">
                 <!-- Service One -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/webDev.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -100,7 +105,9 @@
 
                 <!-- Service Two -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/graphicDesign.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -113,7 +120,9 @@
 
                 <!-- Service Three -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/uiux.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -126,7 +135,9 @@
 
                 <!-- Service Four -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/videoEditing.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -139,7 +150,9 @@
 
                 <!-- Service Five -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/virtualTraining.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -152,7 +165,9 @@
 
                 <!-- Service Six -->
                 <div class="service-card">
-                    <div class="service-img"></div>
+                    <div class="service-img">
+                        <img src="/public/assets/images/cac.jpg" alt="">
+                    </div>
 
                     <div class="service">
                         <div class="service-icon">
@@ -163,14 +178,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="swipe">
+                <p>Swipe to see more services</p>
+                <i class="bi bi-arrow-right"></i>
+            </div>
         </section>
 
-        <section class="portfolio" id="portfolio">
-            <h2>Portfolio</h2>
+        <section class="portfolios" id="portfolios">
+            <div class="portfolio-heading">
+                <h2>Portfolios</h2>
+                <a href="#">View all</a>
+            </div>
 
-            <div class="porfolio-card-list">
+            <div class="portfolio-card-list">
                 <div class="portfolio-card">
-                    <div class="portfolio-img"></div>
+                    <div class="portfolio-img">
+                        <img src="/public/assets/images/webDev.jpg" alt="">
+                    </div>
 
                     <div class="portfolio">
                         <div class="portfolio-icon">
@@ -181,9 +206,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="swipe">
+                <p>Swipe to see more projects</p>
+                <i class="bi bi-arrow-right"></i>
+            </div>
         </section>
 
-        <section class="cta" id="cta">
+        <section class="cta-section" id="cta-section">
             <div class="cta-content" id="cta-content">
                 <h2>We Turn Complex Ideas Into Simple, Powerful Digital Solutions</h2>
 
