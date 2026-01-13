@@ -39,7 +39,9 @@ body {
 
 }
 
-.cta {
+.cta,
+.send-message-button,
+footer .footer-content-one .quick-links .whatsapp-btn {
     background-color: var(--grey);
     padding: 10px 16px;
     border: none;
@@ -55,7 +57,8 @@ body {
     gap: 5px;
 }
 
-.cta:hover {
+.cta:hover,
+.send-message-button:hover {
     background-color: var(--umbra);
     transition: 0.3s ease;
 }
@@ -89,14 +92,16 @@ header .desktop-nav {
     padding: 50px 0;
 }
 
-header .desktop-nav .branding {
+header .desktop-nav .branding,
+footer .footer-content-one .branding {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-header .desktop-nav .branding h4 {
+header .desktop-nav .branding h4,
+footer .footer-content-one .branding h4 {
     font-size: var(--heading4);
     color: var(--white);
 }
@@ -327,7 +332,8 @@ main {
 }
 
 /* === FAQ === */
-.faq {
+.faq,
+.contact-us {
     padding: 100px 126px;
     background-color: var(--black);
     color: var(--white);
@@ -339,7 +345,8 @@ main {
     max-width: 1440px;
 }
 
-.faq .section-title {
+.faq .section-title,
+.contact-us .section-title {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -367,6 +374,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    cursor: pointer;
 }
 
 .faq .faq-list .single-faq .faq-question {
@@ -375,12 +383,159 @@ main {
     justify-content: space-between;
 }
 
+.faq .faq-list .single-faq .faq-question i {
+    transition: transform .3s ease;
+}
+
 .faq .faq-list .single-faq .faq-answer {
     line-height: 1.5rem;
     color: var(--grey);
+    overflow: hidden;
+    display: none;
 }
 
+.faq .faq-list .single-faq.active .faq-answer {
+    max-height: 200px;
+    padding-top: 10px;
+    display: flex;
+    transition: transform .4s ease;
+}
 
+.faq .faq-list .single-faq.active i {
+    transform: rotate(90deg);
+}
+
+/* CONTACT US SECTION */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+form .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form .form-input input,
+form .form-input select,
+form .form-input textarea {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white)
+}
+
+form .form-input input,
+form .form-input textarea {
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+form .form-input textarea {
+    min-height: 150px;
+}
+
+form .form-input select option {
+    color: var(--grey);
+}
+
+/* FOOTER SECTION*/
+footer {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 100px;
+    padding-left: 126px;
+    padding-right: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-content-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1440px;
+    width: 100%;
+}
+
+footer .footer-content-one .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--white);
+}
+
+footer .footer-content-one .quick-links p{
+    font-weight: 700;
+}
+
+footer .footer-content-one .quick-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .footer-content-one .quick-links ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+footer .footer-content-one .quick-links ul li a:hover {
+    color: var(--grey);
+    transition: 0.3s ease;
+}
+
+footer .footer-content-one .quick-links .whatsapp-btn {
+    background-color: #0ec150;
+}
+
+footer .footer-content-one .quick-links .whatsapp-btn:hover {
+    background-color: #059139;
+    transition: .3s ease;
+}
+
+footer .footer-content-two {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+footer .footer-content-two .social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .footer-content-two .social .social-icon {
+    padding: 10px 12px;
+    background-color: var(--umbra);
+    border-radius: 4px;
+}
+
+footer .footer-content-two .social .social-icon a {
+    color: var(--white);
+}
+
+footer .footer-content-two .social .social-icon a:hover {
+    color: var(--grey);
+    transition: .3s ease;
+}
+
+footer .footer-content-two p {
+    color: var(--white);
+}
 
 
 
