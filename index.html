@@ -27,7 +27,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolios">Portfolio</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
@@ -81,6 +81,7 @@
     </header>
 
     <main>
+        <!-- SERVICES SECTION -->
         <section class="services" id="services">
             <div class="services-heading">
                 <h2>Services</h2>
@@ -185,6 +186,7 @@
             </div>
         </section>
 
+        <!-- PORTFOLIO SECTION -->
         <section class="portfolios" id="portfolios">
             <div class="portfolio-heading">
                 <h2>Portfolios</h2>
@@ -213,6 +215,7 @@
             </div>
         </section>
 
+        <!-- CTA -->
         <section class="cta-section" id="cta-section">
             <div class="cta-content" id="cta-content">
                 <h2>We Turn Complex Ideas Into Simple, Powerful Digital Solutions</h2>
@@ -221,6 +224,7 @@
             </div>
         </section>
 
+        <!-- FAQ SECTION -->
         <section class="faq" id="faq">
             <div class="section-title">
                 <h2>Frequently Asked Questions</h2>
@@ -374,6 +378,7 @@
             </div>
         </section>
 
+        <!-- CONTACT US SECTION -->
         <section class="contact-us" id="contact-us">
             <div class="section-title">
                 <h2>Contact Us</h2>
@@ -381,16 +386,15 @@
             </div>
 
             <form action="" method="" class="contact-form" id="contact-form">
+                <small class="form-feedback" id="form-feedback"></small>
                 <div class="form-input">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="First Name and Last Name" required>
-                    <span><small class="name-error" id="name-error"></small></span>
                 </div>
 
                 <div class="form-input">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="someone@email.com" required>
-                    <span><small class="email-error" id="email-error"></small></span>
                 </div>
 
                 <div class="form-input">
@@ -405,14 +409,12 @@
                         <option value="Virtual training">Virtual training</option>
                         <option value="Other">Other</option>
                     </select>
-                    <span><small class="service-error" id="service-error"></small></span>
                 </div>
 
                 <div class="form-input">
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" placeholder="Write something..." required></textarea>
                     <!-- <input type="text" name="message" id="message" required> -->
-                    <span><small class="message-error" id="message-error"></small></span>
                 </div>
 
                 <button type="submit" class="send-message-button" id="send-message-button">Send Message <i class="bi bi-arrow-right"></i></button>
@@ -437,7 +439,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">ِِِِAbout Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolios">Portfolios</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
             </div>
@@ -468,7 +470,7 @@
                 </div>
 
                 <div class="social-icon">
-                    <a href=""><i class="bi bi-linkedin"></i>></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></i></a>
                 </div>
 
                 <div class="social-icon">
@@ -479,9 +481,9 @@
                     <a href=""><i class="bi bi-twitter-x"></i></a>
                 </div>
             </div>
-        </div>
 
-        <p>&copy; 2026 Simple Adroit Technology. All rights reserved.</p>
+            <p><small>&copy; 2026 Simple Adroit Technology. All rights reserved.</small></p>
+        </div>
     </footer>
 
     <script src="public/assets/js/script.js"></script>
