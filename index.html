@@ -27,12 +27,12 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolios">Portfolio</a></li>
+                    <li><a href="#portfolios">Portfolios</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
 
-                <button class="cta">Get Started <i class="bi bi-arrow-right"></i></button>
+                <a class="cta" href="#contact-us">Get Started <i class="bi bi-arrow-right"></i></a>
             </div>
         </nav>
 
@@ -55,7 +55,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolios">Portfolios</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
@@ -76,7 +76,7 @@
                 <p id="hero-text">At Simple Adroit Technology, we design and develop websites, mobile applications, and digital experiences that turn ideas into reliable, scalable solutions. We combine technical expertise with clean design to help businesses grow with confidence.</p>
             </div>
 
-            <button class="cta">Get Started <i class="bi bi-arrow-right"></i></button>
+            <a class="cta" href="#contact-us">Get Started <i class="bi bi-arrow-right"></i></a>
         </div>
     </header>
 
@@ -88,7 +88,7 @@
                 <a href="#">View all</a>
             </div>
 
-            <div class="service-card-list">
+            <div class="service-card-list" id="portfolio-card-list">
                 <!-- Service One -->
                 <div class="service-card">
                     <div class="service-img">
@@ -181,8 +181,12 @@
             </div>
 
             <div class="swipe">
-                <p>Swipe to see more services</p>
-                <i class="bi bi-arrow-right"></i>
+                <p>Swipe/click arrow to see more projects</p>
+                
+                <div class="arrow-nav">
+                    <i class="bi bi-chevron-left arrow prev"></i>
+                    <i class="bi bi-chevron-right arrow next"></i>
+                </div>
             </div>
         </section>
 
@@ -193,7 +197,7 @@
                 <a href="#">View all</a>
             </div>
 
-            <div class="portfolio-card-list">
+            <div class="portfolio-card-list" id="portfolio-card-list">
                 <div class="portfolio-card">
                     <div class="portfolio-img">
                         <img src="/public/assets/images/webDev.jpg" alt="">
@@ -210,8 +214,12 @@
             </div>
 
             <div class="swipe">
-                <p>Swipe to see more projects</p>
-                <i class="bi bi-arrow-right"></i>
+                <p>Swipe/click arrow to see more projects</p>
+                
+                <div class="arrow-nav">
+                    <i class="bi bi-chevron-left arrow prev"></i>
+                    <i class="bi bi-chevron-right arrow next"></i>
+                </div>
             </div>
         </section>
 
@@ -220,7 +228,7 @@
             <div class="cta-content" id="cta-content">
                 <h2>We Turn Complex Ideas Into Simple, Powerful Digital Solutions</h2>
 
-                <button class="cta">Get Started <i class="bi bi-arrow-right"></i></button>
+                <a class="cta" href="#contact-us">Get Started <i class="bi bi-arrow-right"></i></a>
             </div>
         </section>
 
@@ -458,7 +466,7 @@
 
                 <ul>
                     <li><a href="mailto:admin@satechlimited.com">admin@satechlimited.com</a></li>
-                    <li><button class="whatsapp-btn" id="whatsapp-btn">Message us on WhatsApp <i class="bi bi-arrow-right"></i></button></li>
+                    <li><a class="whatsapp-btn" id="whatsapp-btn">Message us on WhatsApp <i class="bi bi-arrow-right"></i></a></li>
                 </ul>
             </div>
         </div>
