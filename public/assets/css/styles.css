@@ -85,9 +85,13 @@ footer .footer-content-one .quick-links .whatsapp-btn {
     display: none;
     flex-direction: column;
     gap: 50px;
-    width: 90%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     background-color: var(--black);
-    border-radius: 8px;
     padding: 50px;
 }
 
@@ -617,12 +621,13 @@ footer .footer-content-two p {
 /* Media Queries */
 
 /* Desktop */
-@media (min-width: 1281px) {
+/* @media (min-width: 1281px) {
 
-}
+} */
 
 /* Laptop and Desktop */
 @media (min-width: 1025px) and (max-width: 1281px) {
+    
     header .hero {
         width: 50%;
     }
@@ -632,7 +637,12 @@ footer .footer-content-two p {
     .cta-section,
     .faq,
     .contact-us {
-        padding: 100px 80px;
+        padding: 80px;
+    }
+
+    .services,
+    .portfolios {
+        gap: 40px;
     }
 
     .cta-section .cta-content h2,
@@ -656,16 +666,48 @@ footer .footer-content-two p {
 
 /* Tablet (Portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background-color: orange;
-    }
 
-    header .desktop-nav {
+    header .desktop-nav .desktop-nav-items {
         display: none;
     }
 
+    .menu-icon {
+        display: block;
+    }
+
+    header .hero,
+    .cta-section .cta-content h2,
+    .faq .section-title,
+    .contact-us .section-title {
+        width: 60%;
+    }
+
+    .services,
+    .portfolios,
+    .cta-section,
+    .faq,
+    .contact-us {
+        padding: 80px 50px;
+    }
+
+    .services,
+    .portfolios {
+        gap: 30px;
+    }
+
+    .faq .faq-list,
+    form {
+        width: 70%
+    }
+
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
     header .mobile-nav {
-        display: flex;
+        display: none;
     }
 }
 
@@ -678,7 +720,105 @@ footer .footer-content-two p {
 
 /* Mobile (Portrait) */
 @media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: yellow;
+    
+    header .desktop-nav .desktop-nav-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header .hero,
+    .cta-section .cta-content h2,
+    .faq .section-title,
+    .contact-us .section-title {
+        width: 80%;
+    }
+
+    .services,
+    .portfolios,
+    .cta-section,
+    .faq,
+    .contact-us {
+        padding: 50px 30px;
+    }
+
+    .services,
+    .portfolios {
+        gap: 30px;
+    }
+
+    .faq .faq-list,
+    form {
+        width: 80%
+    }
+
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    footer .footer-content-one {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .footer-content-two {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    header .desktop-nav .desktop-nav-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header .hero,
+    .cta-section .cta-content h2,
+    .faq .section-title,
+    .contact-us .section-title {
+        width: 80%;
+    }
+
+    .services,
+    .portfolios,
+    .cta-section,
+    .faq,
+    .contact-us {
+        padding: 50px 20px;
+    }
+
+    .services,
+    .portfolios {
+        gap: 20px;
+    }
+
+    .faq .faq-list,
+    form {
+        width: 90%
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer .footer-content-one {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .footer-content-two {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
     }
 }
