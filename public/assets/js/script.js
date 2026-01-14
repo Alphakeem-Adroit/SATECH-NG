@@ -15,6 +15,22 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+// CAROUSEL SCROLLING FOR SERVICES AND PROJECTS SECTION
+const carousel = document.getElementById("portfolio-card-list");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+next.addEventListener("click", ()=> {
+  const cardWidth = carousel.querySelector(".service-card", "portfolio-card").offsetWidth + 15;
+  carousel.scrollBy({left: cardWidth, behavior: "smooth"});
+});
+
+prev.addEventListener("click", ()=> {
+  const cardWidth = carousel.querySelector(".service-card", "portfolio-card").offsetWidth + 15;
+  carousel.scrollBy({left: -cardWidth, behavior: "smooth"});
+});
+
+
 // FAQ SECTION
 const faqs = document.querySelectorAll(".single-faq");
 
