@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --black: #000000;
+    --umbra: #1f1f1f;
+    --grey: #404040;
+    --off-white: #d9d9d9;
+    --white: #ffffff;
+
+    --heading1: 47.8px;
+    --heading2: 39.8px;
+    --heading3: 33.2px;
+    --heading4: 27.6px;
+    --heading5: 23px;
+    --heading6: 19.2px;
+    --paragraph: 18px;
+    --small: 13.3px;
+    --extraSmall: 11.11px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    scrollbar-width: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+main i {
+    font-size: 100px;
+    color: var(--white);
+}
+
+main .success-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+main .success-message .heading {
+    font-weight: 500;
+}
+
+main .success-message a {
+    background-color: var(--grey);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: var(--paragraph);
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+main .success-message i {
+    font-size: var(--paragraph);
+}
+
+main .success-message a:hover {
+    background-color: var(--umbra);
+    transition: 0.3s ease;
+}
+
