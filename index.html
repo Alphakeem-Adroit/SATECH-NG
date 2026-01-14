@@ -7,7 +7,7 @@
     <title>Simple Adroit Technology</title>
 
     <link rel="shortcut icon" href="public/assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="public/assets/css/styles.css">
+    <link rel="stylesheet" href="public/assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
@@ -35,7 +35,7 @@
                 <a class="cta" href="#contact-us">Get Started <i class="bi bi-arrow-right"></i></a>
             </div>
 
-            <i class="bi bi-list menu-icon"></i>
+            <i class="bi bi-list menu-icon" id="openMenu"></i>
         </nav>
 
         <!-- Mobile Screen Navigation -->
@@ -49,7 +49,7 @@
                     <h4>SATECH LTD</h4>
                 </div>
 
-                <i class="bi bi-x-lg menu-icon"></i>
+                <i class="bi bi-x-lg menu-icon" id="closeMenu"></i>
             </div>
 
             <div class="mobile-nav-items" id="mobile-nav-items">
@@ -62,7 +62,7 @@
                     <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
 
-                <button class="cta">Get Started <i class="bi bi-arrow-right"></i></button>
+                <a class="cta" href="#contact-us">Get Started <i class="bi bi-arrow-right"></i></a>
             </div>
         </nav>
         <!-- Mobile Screen Navigation Ends -->
@@ -395,8 +395,18 @@
                 <p>Ready to start a project or have an idea to discuss? Reach out to us and let’s explore how we can turn your vision into a simple, effective digital solution.</p>
             </div>
 
-            <form action="" method="" class="contact-form" id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
                 <small class="form-feedback" id="form-feedback"></small>
+
+                <!-- Connecting Web3Form -->
+                <input type="hidden" name="access_key" value="96602277-4155-4b4e-bd62-30d4a462c938">
+
+                <!-- Message Subject -->
+                <input type="hidden" name="subject" value="New Message from SATECH LTD Website">
+
+                <!-- Success -->
+                <input type="hidden" name="redirect" value="success.html">
+
                 <div class="form-input">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="First Name and Last Name" required>

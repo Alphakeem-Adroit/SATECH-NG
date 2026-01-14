@@ -1,19 +1,22 @@
-// bi bi-x-lg
+// MENU NAVIGATION
+const mobileNav = document.querySelector(".mobile-nav");
+const openMenu = document.getElementById("openMenu");
+const closeMenu = document.getElementById("closeMenu");
 
-const menuBtn = document.getElementById('mobile-menu-toggle');
-const navItems = document.getElementById('mobile-nav-items');
-
-menuBtn.addEventListener('click', () => {
-    navItems.classList.toggle("show");
-
-    if(menuBtn.classList.contains("bi-list")) {
-        menuBtn.Btn.classList.remove("bi-list");
-        menuBtn.classList.add("bi-x-lg");
-    } else {
-        menuBtn.classList.remove("bi-x-lg");
-        menuBtn.classList.add("bi-list");
-    }
+openMenu.addEventListener("click", () => {
+  mobileNav.classList.add("active");
 });
+
+closeMenu.addEventListener("click", () => {
+  mobileNav.classList.remove("active");
+});
+
+document.querySelectorAll(".mobile-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
+  });
+});
+
 
 // CAROUSEL SCROLLING FOR SERVICES AND PROJECTS SECTION
 const carousel = document.getElementById("portfolio-card-list");
