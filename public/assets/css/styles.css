@@ -55,6 +55,7 @@ footer .footer-content-one .quick-links .whatsapp-btn {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
 }
 
 .cta:hover,
@@ -197,6 +198,7 @@ main {
     gap: 64px;
     background-color: var(--black);
     max-width: 1440px;
+    width: 100%;
 }
 
 .services .services-heading,
@@ -229,6 +231,7 @@ main {
     max-width: 1440px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .services .service-card-list::-webkit-scrollbar,
@@ -291,6 +294,16 @@ main {
     align-items: center;
 }
 
+.services .swipe .arrow-nav i,
+.portfolios .swipe .arrow-nav i {
+    cursor: pointer;
+}
+
+.services .swipe .arrow-nav i:hover,
+.portfolios .swipe .arrow-nav i:hover {
+    color: var(--white);
+}
+
 /* CTA Section */
 .cta-section {
     background-color: var(--black);
@@ -323,6 +336,7 @@ main {
 .cta-section .cta-content .cta {
     background-color: var(--white);
     color: var(--grey);
+    text-decoration: none;
 }
 
 .cta-section .cta-content .cta:hover {
@@ -500,6 +514,7 @@ footer .footer-content-one .quick-links .whatsapp-btn {
 
 footer .footer-content-one .quick-links .whatsapp-btn:hover {
     background-color: #059139;
+    color: var(--white);
     transition: .3s ease;
 }
 
