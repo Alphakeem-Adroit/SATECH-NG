@@ -695,6 +695,10 @@ footer .footer-content-two p {
         gap: 30px;
     }
 
+    .cta-section .cta-content {
+        gap: 30px;
+    }
+
     .faq .faq-list,
     form {
         width: 70%
@@ -720,6 +724,17 @@ footer .footer-content-two p {
 
 /* Mobile (Portrait) */
 @media (min-width: 481px) and (max-width: 767px) {
+
+    header .desktop-nav .branding h4,
+    header .mobile-nav-header .branding h4,
+    footer .footer-content-one .branding h4 {
+        font-size: var(--heading5);
+    }
+
+    .branding img {
+        height: 30px;
+        width: 30px;
+    }
     
     header .desktop-nav .desktop-nav-items {
         display: none;
@@ -749,6 +764,10 @@ footer .footer-content-two p {
         gap: 30px;
     }
 
+    .cta-section .cta-content {
+        gap: 30px;
+    }
+
     .faq .faq-list,
     form {
         width: 80%
@@ -772,7 +791,23 @@ footer .footer-content-two p {
 }
 
 @media (max-width: 480px) {
-    
+
+    header {
+        height: 100%;
+        padding-bottom: 80px;
+    }
+
+    header .desktop-nav .branding h4,
+    header .mobile-nav-header .branding h4,
+    footer .footer-content-one .branding h4 {
+        font-size: var(--heading5);
+    }
+
+    .branding img {
+        height: 30px;
+        width: 30px;
+    }
+
     header .desktop-nav .desktop-nav-items {
         display: none;
     }
@@ -788,6 +823,20 @@ footer .footer-content-two p {
         width: 80%;
     }
 
+    header .hero .new {
+        padding: 3px;
+    }
+
+    header .hero .new .new-button {
+        padding: 2px 4px;
+        font-size: var(--extraSmall);
+    }
+
+    header .hero .new small {
+        padding: 0 3px;
+        font-size: var(--extraSmall);
+    }
+
     .services,
     .portfolios,
     .cta-section,
@@ -799,6 +848,14 @@ footer .footer-content-two p {
     .services,
     .portfolios {
         gap: 20px;
+    }
+
+    /* .cta-section {
+        padding: 50px 20px;
+    } */
+
+    .cta-section .cta-content {
+        gap: 30px;
     }
 
     .faq .faq-list,
