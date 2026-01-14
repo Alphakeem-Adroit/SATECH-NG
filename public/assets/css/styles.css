@@ -31,6 +31,11 @@ html {
 
 body {
     background-color: var(--black);
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .active {
@@ -64,23 +69,70 @@ footer .footer-content-one .quick-links .whatsapp-btn {
     transition: 0.3s ease;
 }
 
+.menu-icon {
+    font-size: var(--heading3);
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icon:hover {
+    color: var(--grey);
+    transition: .3s ease;
+}
+
 .mobile-nav {
     display: none;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    background-color: var(--black);
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.mobile-nav .mobile-nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobile-nav .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-nav .mobile-nav-items ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: var(--paragraph);
+    color: var(--white);
+}
+
+.mobile-nav .mobile-nav-items ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.mobile-nav .mobile-nav-items ul li a:hover {
+    color: var(--grey);
+    transition: .3s ease;
 }
 
 /* Hero Section */
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(/public/assets/images/bg.png);
+    background-image: url(/public/assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 header .desktop-nav {
@@ -90,10 +142,11 @@ header .desktop-nav {
     align-items: center;
     max-width: 1440px;
     width: 100%;
-    padding: 50px 0;
+    padding: 30px;
 }
 
 header .desktop-nav .branding,
+header .mobile-nav-header .branding,
 footer .footer-content-one .branding {
     display: flex;
     flex-direction: row;
@@ -102,6 +155,7 @@ footer .footer-content-one .branding {
 }
 
 header .desktop-nav .branding h4,
+header .mobile-nav-header .branding h4,
 footer .footer-content-one .branding h4 {
     font-size: var(--heading4);
     color: var(--white);
@@ -330,7 +384,7 @@ main {
 }
 
 .cta-section .cta-content h2 {
-    width: 40%
+    width: 40%;
 }
 
 .cta-section .cta-content .cta {
@@ -464,6 +518,7 @@ footer {
     padding-top: 100px;
     padding-left: 126px;
     padding-right: 126px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -524,6 +579,7 @@ footer .footer-content-two {
     width: 100%;
     max-width: 1440px;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 0;
 }
 
@@ -567,8 +623,27 @@ footer .footer-content-two p {
 
 /* Laptop and Desktop */
 @media (min-width: 1025px) and (max-width: 1281px) {
-    body {
-        background-color: blue;
+    header .hero {
+        width: 50%;
+    }
+
+    .services,
+    .portfolios,
+    .cta-section,
+    .faq,
+    .contact-us {
+        padding: 100px 80px;
+    }
+
+    .cta-section .cta-content h2,
+    .faq .section-title,
+    .contact-us .section-title {
+        width: 50%;
+    }
+
+    footer {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 
